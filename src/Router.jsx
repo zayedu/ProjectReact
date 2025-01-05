@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from '@/pages/HomePage';
 import ListingDetailsPage from '@/pages/ListingDetailsPage';
 import NotFoundPage from '@/pages/NotFoundPage';
+import ListingFavoritesPage from '@/pages/ListingFavoritesPage';
 
 import App from './App';
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/listings/:listingId',
     element: <ListingDetailsPage />,
+  },
+  {
+    path: '/favorites',
+    element: <ListingFavoritesPage />,
   },
 ]);
 
